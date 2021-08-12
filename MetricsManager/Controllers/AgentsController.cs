@@ -25,5 +25,11 @@ namespace MetricsManager.Controllers
             return Ok();
         }
 
+        [HttpGet("getList")]
+        public IActionResult GetList()
+        {
+            return Ok();
+        }
+
     }
 }
