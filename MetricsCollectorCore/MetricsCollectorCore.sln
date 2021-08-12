@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricsCollectorCore", "MetricsCollectorCore.csproj", "{B1FD7770-1806-46A9-8CF4-D56B4F1CB057}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricsManager", "..\MetricsManager\MetricsManager.csproj", "{843B4812-E65B-4EBA-B7F4-BD947C6E6F54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1FD7770-1806-46A9-8CF4-D56B4F1CB057} = {B1FD7770-1806-46A9-8CF4-D56B4F1CB057}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
