@@ -8,8 +8,6 @@ A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\Metr
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\MetricsCollectorCore.dll
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\MetricsCollectorCore.pdb
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.csprojAssemblyReference.cache
-A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.csproj.CoreCompileInputs.cache
-A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.MvcApplicationPartsAssemblyInfo.cache
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.AssemblyInfoInputs.cache
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.AssemblyInfo.cs
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.RazorTargetAssemblyInfo.cache
@@ -18,3 +16,5 @@ A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\stat
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.dll
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.pdb
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.genruntimeconfig.cache
+A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\NLog.dll
+A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.csproj.CopyComplete

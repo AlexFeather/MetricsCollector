@@ -86,9 +86,10 @@ A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\ru\Microso
 A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.csproj.CoreCompileInputs.cache
-A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.MvcApplicationPartsAssemblyInfo.cache
 A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.csproj.CopyComplete
 A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.dll
 A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.pdb
 A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.genruntimeconfig.cache
+A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\NLog.dll
+A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
