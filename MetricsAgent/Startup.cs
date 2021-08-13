@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Threading.Tasks;
+using MetricsAgent.Models.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +28,46 @@ namespace MetricsAgent
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            ConfigureSqlLiteConnection(services);
+            services.AddScoped<ICpuMetricsRepository, CpuMetricsRepository>();
+            services.AddScoped<INetMetricsRepository, NetMetricsRepository>();
+            services.AddScoped<IRamMetricsRepository, RammetricsRepository>();
         }
+
+        private void ConfigureSqlLiteConnection(IServiceCollection services)
+        {
+            const string connectionString = "Data Source=metrics.db;Version=3;Pooling=true;Max Pool Size=100;";
+            var connection = new SQLiteConnection(connectionString);
+            connection.Open();
+            PrepareSchema(connection);
+        }
+
+        private void PrepareSchema(SQLiteConnection connection)
+        {
+            using (var command = new SQLiteCommand(connection))
+            {
+                command.CommandText = "DROP TABLE IF EXISTS cpumetrics";
+                command.ExecuteNonQuery();
+                command.CommandText = "DROP TABLE IF EXISTS netmetrics";
+                command.ExecuteNonQuery();
+                command.CommandText = "DROP TABLE IF EXISTS rammetrics";
+                command.ExecuteNonQuery();
+
+
+                command.CommandText = @"CREATE TABLE cpumetrics(id INTEGER PRIMARY KEY,
+                    value INT, time INT)";
+                command.ExecuteNonQuery();
+
+                command.CommandText = @"CREATE TABLE netmetrics(id INTEGER PRIMARY KEY,
+                    value INT, time INT)";
+                command.ExecuteNonQuery();
+
+                command.CommandText = @"CREATE TABLE rammetrics(id INTEGER PRIMARY KEY,
+                    value INT, time INT)";
+                command.ExecuteNonQuery();
+            }
+        }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
