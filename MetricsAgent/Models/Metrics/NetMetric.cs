@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace MetricsAgent.Models.Metrics
 {
-    public class NetMetrics
+    public class NetMetric
     {
-        int Id { get; set; }
-        int Value { get; set; }
-        TimeSpan Time { get; set; }
+        public int Id { get; set; }
+        public int Value { get; set; }
+        public TimeSpan Time { get; set; }
     }
 }
