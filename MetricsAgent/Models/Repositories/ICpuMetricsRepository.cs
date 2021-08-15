@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace MetricsAgent.Models.Repositories
 {
-    interface ICpuMetricsRepository : IRepository<CpuMetric>
+    public interface ICpuMetricsRepository : IRepository<CpuMetric>
     {
     }
 
     public class CpuMetricsRepository : ICpuMetricsRepository
     {
-        private const string ConnectionString = "Data Source=metrics.db;Version=3;Pooling=true;Max Pool Size=100;"
+        private const string ConnectionString = "Data Source=metrics.db;Version=3;Pooling=true;Max Pool Size=100;";
 
         public void Create(CpuMetric item)
         {

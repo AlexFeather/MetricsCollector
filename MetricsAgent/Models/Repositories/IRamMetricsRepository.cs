@@ -5,11 +5,11 @@ using System.Data.SQLite;
 
 namespace MetricsAgent.Models.Repositories
 {
-    interface IRamMetricsRepository : IRepository<RamMetric>
+    public interface IRamMetricsRepository : IRepository<RamMetric>
     {
     }
 
-    public class RammetricsRepository : IRamMetricsRepository
+    public class RamMetricsRepository : IRamMetricsRepository
     {
 
         private const string ConnectionString = "Data Source=metrics.db;Version=3;Pooling=true;Max Pool Size=100;";

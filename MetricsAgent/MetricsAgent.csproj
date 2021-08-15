@@ -9,5 +9,11 @@
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.114.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Dto\" />
+    <Folder Include="Models\Responses\" />
+    <Folder Include="Models\Requests\" />
+  </ItemGroup>
+
 
 </Project>

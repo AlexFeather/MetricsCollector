@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MetricsAgent.Models.Repositories
 {
-    interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         IList<T> GetAll();
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MetricsAgent.Models.Repositories
 {
-    interface INetMetricsRepository : IRepository<NetMetric>
+    public interface INetMetricsRepository : IRepository<NetMetric>
     {
     }
 
