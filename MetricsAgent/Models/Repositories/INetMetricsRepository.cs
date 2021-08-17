@@ -82,6 +82,34 @@ namespace MetricsAgent.Models.Repositories
             return returnList;
         }
 
+        public IList<NetMetric> GetByTimePeriod(TimeSpan fromTime, TimeSpan toTime)
+        {
+            using var connection = new SQLiteConnection(ConnectionString);
+            connection.Open();
+
+            using var cmd = new SQLiteCommand(connection);
+            cmd.CommandText = "SELECT * FROM netmetrics where @fromTime <= Time <= @toTime";
+            cmd.Parameters.AddWithValue("@fromTime", fromTime);
+            cmd.Parameters.AddWithValue("@toTime", toTime);
+
+            var returnList = new List<NetMetric>();
+
+            using (SQLiteDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    returnList.Add(new NetMetric
+                    {
+                        Id = reader.GetInt32(0),
+                        Value = reader.GetInt32(1),
+                        Time = TimeSpan.FromSeconds(reader.GetInt32(2))
+                    });
+                }
+            }
+
+            return returnList;
+        }
+
         public NetMetric GetById(int id)
         {
             using var connection = new SQLiteConnection(ConnectionString);

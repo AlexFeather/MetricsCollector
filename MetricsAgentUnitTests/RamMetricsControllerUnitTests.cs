@@ -1,5 +1,8 @@
 ﻿using MetricsAgent.Controllers;
+using MetricsAgent.Models.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
 using System;
 using Xunit;
 
@@ -7,11 +10,15 @@ namespace MetricsAgentUnitTests
 {
     public class RamMetricsControllerUnitTests
     {
-        RamMetricsController controller;
+        private RamMetricsController controller;
+        private Mock<RamMetricsRepository> mockRepo;
+        private Mock<ILogger<RamMetricsController>> mockLogger;
 
         public RamMetricsControllerUnitTests()
         {
-            controller = new RamMetricsController();
+            mockRepo = new Mock<RamMetricsRepository>();
+            mockLogger = new Mock<ILogger<RamMetricsController>>();
+            controller = new RamMetricsController(mockRepo.Object, mockLogger.Object);
         }
 
         [Fact]
