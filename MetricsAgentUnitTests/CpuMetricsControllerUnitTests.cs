@@ -47,9 +47,9 @@ namespace MetricsAgentUnitTests
         }
 
         [Fact]
-        public void GetAll_Should_Return_Ok()
+        public void GetAll_Should_Return_Ok() //вообще не понимаю, как это должно работать
         {
-            controller.Create(new CpuMetricCreateRequest { Time = TimeSpan.FromSeconds(1), Value = 50 });
+            mockRepo.Setup(_repository => _repository.GetAll()).Verifiable();
             var result = controller.GetAll();
 
             _ = Assert.IsAssignableFrom<IActionResult>(result);

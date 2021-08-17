@@ -65,6 +65,16 @@ namespace MetricsAgent
                 command.CommandText = @"CREATE TABLE rammetrics(id INTEGER PRIMARY KEY,
                     value INT, time INT)";
                 command.ExecuteNonQuery();
+
+                Random rnd = new Random();
+
+                for(int i = 0; i < 20; i++)
+                {
+                    command.CommandText = @"INSERT INTO cpumetrics(value, time) VALUES(@Value, @Time)";
+                    command.Parameters.AddWithValue("@Value", rnd.Next(0, 50));
+                    command.Parameters.AddWithValue("@Time", rnd.Next(0, 10000));
+                    command.ExecuteNonQuery();
+                }
             }
         }
 
