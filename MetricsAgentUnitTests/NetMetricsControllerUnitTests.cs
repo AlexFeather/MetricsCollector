@@ -1,5 +1,8 @@
 ﻿using MetricsAgent.Controllers;
+using MetricsAgent.Models.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
 using System;
 using Xunit;
 
@@ -7,11 +10,15 @@ namespace MetricsAgentUnitTests
 {
     public class NetMetricsControllerUnitTests
     {
-        NetMetricsController controller;
+        private NetMetricsController controller;
+        private Mock<NetMetricsRepository> mockRepo;
+        private Mock<ILogger<NetMetricsController>> mockLogger;
 
         public NetMetricsControllerUnitTests()
         {
-            controller = new NetMetricsController();
+            mockRepo = new Mock<NetMetricsRepository>();
+            mockLogger = new Mock<ILogger<NetMetricsController>>();
+            controller = new NetMetricsController(mockRepo.Object, mockLogger.Object);
         }
 
         [Fact]

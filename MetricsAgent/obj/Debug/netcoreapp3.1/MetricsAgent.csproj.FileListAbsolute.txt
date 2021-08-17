@@ -86,9 +86,14 @@ A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\ru\Microsoft
 A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.csproj.CoreCompileInputs.cache
-A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.MvcApplicationPartsAssemblyInfo.cache
 A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.csproj.CopyComplete
 A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.dll
 A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.pdb
 A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.genruntimeconfig.cache
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\System.Data.SQLite.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\SQLite.Interop.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.csproj.CoreCompileInputs.cache
+A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.MvcApplicationPartsAssemblyInfo.cache
