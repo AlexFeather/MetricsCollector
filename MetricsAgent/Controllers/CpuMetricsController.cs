@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using MetricsAgent.Models.Dto;
 using MetricsAgent.Models.Metrics;
 using MetricsAgent.Models.Repositories;
@@ -19,10 +20,12 @@ namespace MetricsAgent.Controllers
     {
         private ICpuMetricsRepository _repository;
         private readonly ILogger<CpuMetricsController> _logger;
+        private IMapper _mapper;
         
 
-        public CpuMetricsController(ICpuMetricsRepository repository, ILogger<CpuMetricsController> logger)
+        public CpuMetricsController(ICpuMetricsRepository repository, ILogger<CpuMetricsController> logger, IMapper mapper)
         {
+            _mapper = mapper;
             _repository = repository;
             _logger = logger;
             _logger.LogDebug(1, "NLog встроен в MetricsAgent.CpuMetricsController");

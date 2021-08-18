@@ -179,3 +179,4 @@ A:\gb lessons\MetricsCollector\MetricsAgentUnitTests\bin\Debug\netcoreapp3.1\Cas
 A:\gb lessons\MetricsCollector\MetricsAgentUnitTests\bin\Debug\netcoreapp3.1\Moq.dll
 A:\gb lessons\MetricsCollector\MetricsAgentUnitTests\obj\Debug\netcoreapp3.1\MetricsAgentUnitTests.dll
 A:\gb lessons\MetricsCollector\MetricsAgentUnitTests\obj\Debug\netcoreapp3.1\MetricsAgentUnitTests.pdb
+A:\gb lessons\MetricsCollector\MetricsAgentUnitTests\bin\Debug\netcoreapp3.1\Dapper.dll
