@@ -7,10 +7,6 @@ using System.Linq;
 
 namespace MetricsAgent.Models.Repositories
 {
-    public interface IRamMetricsRepository : IRepository<RamMetric>
-    {
-    }
-
     public class RamMetricsRepository : IRamMetricsRepository
     {
 

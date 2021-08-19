@@ -3,16 +3,11 @@ using MetricsAgent.DAL;
 using MetricsAgent.Models.Metrics;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SQLite;
 using System.Linq;
 
 namespace MetricsAgent.Models.Repositories
 {
-    public interface ICpuMetricsRepository : IRepository<CpuMetric>
-    {
-    }
-
     public class CpuMetricsRepository : ICpuMetricsRepository
     {
         private const string ConnectionString = "Data Source=metrics.db;Version=3;Pooling=true;Max Pool Size=100;";
