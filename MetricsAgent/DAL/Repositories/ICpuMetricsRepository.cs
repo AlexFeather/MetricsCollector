@@ -66,11 +66,11 @@ namespace MetricsAgent.Models.Repositories
         public IList<CpuMetric> GetByTimePeriod(TimeSpan fromTime, TimeSpan toTime)
         {
             using var connection = new SQLiteConnection(ConnectionString);
-            return connection.Query<CpuMetric>("SELECT Id, Time, Value FROM cpumetrics where @fromTime <= Time <= @toTime",
+            return connection.Query<CpuMetric>("SELECT Id, Time, Value FROM cpumetrics WHERE @fromTime <= Time <= @toTime",
                 new
                 {
-                    fromTime = fromTime,
-                    toTime = toTime
+                    fromTime,
+                    toTime
                 }).ToList();
         }
 
