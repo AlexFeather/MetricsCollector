@@ -31,7 +31,20 @@ namespace MetricsAgent.Controllers
         public IActionResult GetMetricsFromTimePeriod([FromRoute]TimeSpan fromTime, [FromRoute]TimeSpan toTime)
         {
             _logger.LogDebug("MetricsAgent.RamMetricsController.GetMetricsFromTimePeriod вызван.");
-            return Ok();
+
+            var metrics = _repository.GetByTimePeriod(fromTime, toTime);
+            var response = new RamMetricsResponse()
+
+            {
+                Metrics = new List<RamMetricDto>()
+            };
+
+            foreach (var metric in metrics)
+            {
+                response.Metrics.Add(new RamMetricDto { Time = metric.Time, Value = metric.Value, Id = metric.Id });
+            }
+
+            return Ok(response);
         }
 
         [HttpPost("create")]
@@ -51,9 +64,10 @@ namespace MetricsAgent.Controllers
         public IActionResult GetAll()
         {
             _logger.LogDebug("MetricsAgent.RamMetricsController.GetAll вызван.");
-            var metrics = _repository.GetAll();
 
+            var metrics = _repository.GetAll();
             var response = new RamMetricsResponse()
+
             {
                 Metrics = new List<RamMetricDto>()
             };

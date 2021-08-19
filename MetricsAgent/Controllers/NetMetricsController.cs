@@ -31,7 +31,20 @@ namespace MetricsAgent.Controllers
         public IActionResult GetMetricsFromTimePeriod([FromRoute]TimeSpan fromTime, [FromRoute]TimeSpan toTime)
         {
             _logger.LogDebug("MetricsAgent.NetMetricsController.GetMetricsFromTimePeriod вызван.");
-            return Ok();
+
+            var metrics = _repository.GetByTimePeriod(fromTime, toTime);
+            var response = new NetMetricsResponse()
+
+            {
+                Metrics = new List<NetMetricDto>()
+            };
+
+            foreach (var metric in metrics)
+            {
+                response.Metrics.Add(new NetMetricDto { Time = metric.Time, Value = metric.Value, Id = metric.Id });
+            }
+
+            return Ok(response);
         }
 
         [HttpPost("create")]
