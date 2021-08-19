@@ -18,6 +18,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricsAgent", "..\MetricsA
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricsAgentUnitTests", "..\MetricsAgentUnitTests\MetricsAgentUnitTests.csproj", "{7E92D603-360A-43EA-A411-703C068D664F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66C6D0F1-5157-4F04-A42B-878A50DC8287} = {66C6D0F1-5157-4F04-A42B-878A50DC8287}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
