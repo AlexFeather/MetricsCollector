@@ -22,7 +22,7 @@ namespace MetricsAgentUnitTests
         {
             mockRepo = new Mock<ICpuMetricsRepository>();
             mockLogger = new Mock<ILogger<CpuMetricsController>>();
-            controller = new CpuMetricsController(mockRepo.Object, mockLogger.Object, mapper);
+            controller = new CpuMetricsController(mockRepo.Object, mockLogger.Object);
         }
 
         [Fact]

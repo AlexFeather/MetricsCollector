@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WNwSkpTdhYr29h2BPKdVs1URtGpe4crU2VbxEr+qqNd4DAStkl6N75VzCj8dgCK1lHbdmRCBw8L6S9NbpNxdIg==",
+  "dgSpecHash": "FIImtd4xUZtL6I5rr4w4sN0PUrSod9Uxn9H6w34IaHzgymPWVj0nmQeY3tfvR0z4DmAnysrcgqRjGVTJb8rLxQ==",
   "success": true,
   "projectFilePath": "A:\\gb lessons\\MetricsCollector\\MetricsAgentUnitTests\\MetricsAgentUnitTests.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\fluentmigrator\\3.2.17\\fluentmigrator.3.2.17.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\fluentmigrator.abstractions\\3.2.17\\fluentmigrator.abstractions.3.2.17.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
@@ -69,6 +71,7 @@
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.componentmodel.eventbasedasync\\4.0.11\\system.componentmodel.eventbasedasync.4.0.11.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
@@ -141,6 +144,7 @@
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.threading.threadpool\\4.0.10\\system.threading.threadpool.4.0.10.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",

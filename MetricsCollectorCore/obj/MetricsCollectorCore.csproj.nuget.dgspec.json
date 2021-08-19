@@ -36,6 +36,18 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.2.17, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[3.2.17, )"
+            },
+            "FluentMigrator.Runner.SQLite": {
+              "target": "Package",
+              "version": "[3.2.17, )"
+            },
             "NLog": {
               "target": "Package",
               "version": "[4.7.10, )"
