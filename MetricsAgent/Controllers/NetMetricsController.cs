@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using MetricsAgent.Models.Dto;
 using MetricsAgent.Models.Metrics;
 using MetricsAgent.Models.Repositories;
@@ -17,11 +18,13 @@ namespace MetricsAgent.Controllers
     [ApiController]
     public class NetMetricsController : ControllerBase
     {
+        private Mapper _mapper;
         private INetMetricsRepository _repository;
         private readonly ILogger<NetMetricsController> _logger;
 
-        public NetMetricsController(INetMetricsRepository repository, ILogger<NetMetricsController> logger)
+        public NetMetricsController(INetMetricsRepository repository, ILogger<NetMetricsController> logger, Mapper mapper)
         {
+            _mapper = mapper;
             _repository = repository;
             _logger = logger;
             _logger.LogDebug(1, "NLog встроен в MetricsAgent.NetMetricsController");
@@ -41,7 +44,7 @@ namespace MetricsAgent.Controllers
 
             foreach (var metric in metrics)
             {
-                response.Metrics.Add(new NetMetricDto { Time = metric.Time, Value = metric.Value, Id = metric.Id });
+                response.Metrics.Add(_mapper.Map<NetMetricDto>(metric));
             }
 
             return Ok(response);
@@ -73,7 +76,7 @@ namespace MetricsAgent.Controllers
 
             foreach (var metric in metrics)
             {
-                response.Metrics.Add(new NetMetricDto { Time = metric.Time, Value = metric.Value, Id = metric.Id });
+                response.Metrics.Add(_mapper.Map<NetMetricDto>(metric));
             }
 
             return Ok(response);
