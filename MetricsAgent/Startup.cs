@@ -8,6 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Data.SQLite;
 using FluentMigrator.Runner;
+using MetricsAgent.Jobs;
+using Quartz.Spi;
+using Quartz;
+using Quartz.Impl;
+using MetricsAgent.DAL.Dto;
 
 namespace MetricsAgent
 {
@@ -43,6 +48,25 @@ namespace MetricsAgent
                 .ScanIn(typeof(Startup).Assembly).For.Migrations()
                 ).AddLogging(lb => lb
                 .AddFluentMigratorConsole());
+
+            services.AddSingleton<IJobFactory, SingletonJobFactory>();
+            services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
+
+            services.AddSingleton<CpuMetricJob>();
+            services.AddSingleton<NetMetricJob>();
+            services.AddSingleton<RamMetricJob>();
+
+            services.AddSingleton(new JobSchedule(
+                jobType: typeof(CpuMetricJob),
+                cronExpression: "0/5 * * * * ?"));
+            services.AddSingleton(new JobSchedule(
+                jobType: typeof(RamMetricJob),
+                cronExpression: "0/5 * * * * ?"));
+            services.AddSingleton(new JobSchedule(
+                jobType: typeof(NetMetricJob),
+                cronExpression: "0/5 * * * * ?"));
+
+
         }
 
         private void ConfigureSqlLiteConnection(IServiceCollection services)
