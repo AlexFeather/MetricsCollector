@@ -1,4 +1,3 @@
-using Castle.Core.Logging;
 using MetricsAgent.Controllers;
 using MetricsAgent.Models.Metrics;
 using MetricsAgent.Models.Repositories;
@@ -7,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
 using System;
-using System.Collections.Generic;
 using Xunit;
 
 namespace MetricsAgentUnitTests
@@ -22,7 +20,7 @@ namespace MetricsAgentUnitTests
         {
             mockRepo = new Mock<ICpuMetricsRepository>();
             mockLogger = new Mock<ILogger<CpuMetricsController>>();
-            controller = new CpuMetricsController(mockRepo.Object, mockLogger.Object, MetricsAgent.Startup.mapper);
+            controller = new CpuMetricsController(mockRepo.Object, mockLogger.Object);
         }
 
         [Fact]

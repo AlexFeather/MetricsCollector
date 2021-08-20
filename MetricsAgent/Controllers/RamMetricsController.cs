@@ -18,7 +18,7 @@ namespace MetricsAgent.Controllers
     [ApiController]
     public class RamMetricsController : ControllerBase
     {
-        private Mapper _mapper
+        private Mapper _mapper;
         private IRamMetricsRepository _repository;
         private readonly ILogger<RamMetricsController> _logger;
 

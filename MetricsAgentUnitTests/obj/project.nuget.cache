@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ocyTJ0DYxye6A8vOCwuQxBXs0MKrrZgdwD2qu1zUniQ3FinnlaxU2hhwisDAQd5PbS65Bf8hyLvLNdUjN9xW7Q==",
+  "dgSpecHash": "P02H36Fk5xVFaMp4ww7vH098SR0TrVBU5EEPGGCzHmlRWQK4N4No5oYPLAItpyA/+dgg9nVa6jxKZpGw14qW5w==",
   "success": true,
   "projectFilePath": "A:\\gb lessons\\MetricsCollector\\MetricsAgentUnitTests\\MetricsAgentUnitTests.csproj",
   "expectedPackageFiles": [
@@ -46,7 +46,7 @@
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.0\\microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.0\\microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.logging\\2.0.1\\microsoft.extensions.logging.2.0.1.nupkg.sha512",
-    "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.1\\microsoft.extensions.logging.abstractions.2.0.1.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
@@ -75,6 +75,7 @@
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\quartz\\3.3.3\\quartz.3.3.3.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -114,7 +115,7 @@
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.data.sqlite.core\\1.0.114.3\\system.data.sqlite.core.1.0.114.3.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
-    "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+    "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.diagnostics.process\\4.1.0\\system.diagnostics.process.4.1.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.diagnostics.textwritertracelistener\\4.0.0\\system.diagnostics.textwritertracelistener.4.0.0.nupkg.sha512",
     "C:\\Users\\MAINCOMP\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",

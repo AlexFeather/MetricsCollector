@@ -143,6 +143,10 @@
               "target": "Package",
               "version": "[3.1.5, )"
             },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.3.3, )"
+            },
             "System.Data.SQLite.Core": {
               "target": "Package",
               "version": "[1.0.114.3, )"
