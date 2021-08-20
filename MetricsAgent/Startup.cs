@@ -33,9 +33,9 @@ namespace MetricsAgent
             services.AddControllers();
             ConfigureSqlLiteConnection(services);
 
-            services.AddScoped<ICpuMetricsRepository, CpuMetricsRepository>();
-            services.AddScoped<INetMetricsRepository, NetMetricsRepository>();
-            services.AddScoped<IRamMetricsRepository, RamMetricsRepository>();
+            services.AddSingleton<ICpuMetricsRepository, CpuMetricsRepository>();
+            services.AddSingleton<INetMetricsRepository, NetMetricsRepository>();
+            services.AddSingleton<IRamMetricsRepository, RamMetricsRepository>();
 
             var mapperConfiguration = new MapperConfiguration(mp => mp.AddProfile(new MapperProfile()));
             var mapper = mapperConfiguration.CreateMapper();
@@ -51,6 +51,7 @@ namespace MetricsAgent
 
             services.AddSingleton<IJobFactory, SingletonJobFactory>();
             services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
+            services.AddHostedService<QuartzHostedService>();
 
             services.AddSingleton<CpuMetricJob>();
             services.AddSingleton<NetMetricJob>();
@@ -79,7 +80,7 @@ namespace MetricsAgent
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IMigrationRunner migrationRunner)
         {
             if (env.IsDevelopment())
             {
@@ -96,6 +97,8 @@ namespace MetricsAgent
             {
                 endpoints.MapControllers();
             });
+
+            migrationRunner.MigrateUp();
         }
     }
 }

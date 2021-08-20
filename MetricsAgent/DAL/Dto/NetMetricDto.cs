@@ -8,7 +8,8 @@ namespace MetricsAgent.Models.Dto
     public class NetMetricDto
     {
         public TimeSpan Time { get; set; }
-        public int Value { get; set; }
+        public int ValueDownload { get; set; }
+        public int ValueUpload { get; set; }
         public int Id { get; set; }
     }
 }

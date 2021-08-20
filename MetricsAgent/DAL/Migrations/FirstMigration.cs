@@ -20,7 +20,8 @@ namespace MetricsAgent.DAL.Migrations
                 .WithColumn("Time").AsInt64();
             Create.Table("netmetrics")
                 .WithColumn("Id").AsInt64().PrimaryKey().Identity()
-                .WithColumn("Value").AsInt32()
+                .WithColumn("ValueDownload").AsInt32()
+                .WithColumn("ValueUpload").AsInt32()
                 .WithColumn("Time").AsInt64();
             Create.Table("rammetrics")
                 .WithColumn("Id").AsInt64().PrimaryKey().Identity()

@@ -56,7 +56,8 @@ namespace MetricsAgent.Controllers
             _logger.LogDebug("MetricsAgent.NetMetricsController.Create вызван.");
             _repository.Create(new NetMetric
             {
-                Value = request.Value,
+                ValueDownload = request.ValueDownload,
+                ValueUpload = request.ValueUpload,
                 Time = request.Time
             });
 

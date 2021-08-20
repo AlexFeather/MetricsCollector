@@ -26,6 +26,7 @@
         "dependencies": {
           "FluentMigrator": "3.2.17",
           "FluentMigrator.Runner": "3.2.17",
+          "FluentMigrator.Runner.SQLite": "3.2.17",
           "NLog": "4.7.10",
           "NLog.Web.AspNetCore": "4.13.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",

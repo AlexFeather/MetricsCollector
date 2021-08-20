@@ -22,11 +22,12 @@ namespace MetricsAgent.Models.Repositories
         {
             using var connection = new SQLiteConnection(ConnectionString);
             {
-                connection.Execute("INSERT INTO netmetrics(value, time) VALUES(@value, @time)",
+                connection.Execute("INSERT INTO netmetrics(ValueDownload, ValueUpload, Time) VALUES(@ValueDownload, @ValueUpload, @Time)",
                     new
                     {
-                        value = item.Value,
-                        time = item.Time
+                        ValueDownload = item.ValueDownload,
+                        ValueUpload = item.ValueUpload,
+                        Time = item.Time
                     });
             }
         }
@@ -35,10 +36,10 @@ namespace MetricsAgent.Models.Repositories
         {
             using var connection = new SQLiteConnection(ConnectionString);
             {
-                connection.Execute("DELETE FROM netmetrics WHERE id = @id",
+                connection.Execute("DELETE FROM netmetrics WHERE Id = @Id",
                     new
                     {
-                        id
+                        Id = id
                     });
             }
         }
@@ -47,12 +48,13 @@ namespace MetricsAgent.Models.Repositories
         {
             using var connection = new SQLiteConnection(ConnectionString);
             {
-                connection.Execute("UPDATE netmetrics SET value = @value, time = @time WHERE id=@id;",
+                connection.Execute("UPDATE netmetrics SET ValueDownload = @ValueDownload, ValueUpload = @ValueUpload, Time = @Time WHERE Id=@Id;",
                     new
                     {
-                        time = item.Time,
-                        value = item.Value,
-                        id = item.Id
+                        Time = item.Time,
+                        ValueDownload = item.ValueDownload,
+                        ValueUpload = item.ValueUpload,
+                        Id = item.Id
                     });
             }
         }
@@ -61,7 +63,7 @@ namespace MetricsAgent.Models.Repositories
         {
             using var connection = new SQLiteConnection(ConnectionString);
             {
-                return connection.Query<NetMetric>("SELECT * FROM netmetrics").ToList();
+                return connection.Query<NetMetric>("SELECT Id, ValueDownload, ValueUpload, Time FROM netmetrics").ToList();
             }
         }
 
@@ -69,7 +71,7 @@ namespace MetricsAgent.Models.Repositories
         {
             using var connection = new SQLiteConnection(ConnectionString);
             {
-                return connection.Query<NetMetric>("SELECT * FROM netmetrics WHERE @fromTime <= Time <= @toTime",
+                return connection.Query<NetMetric>("SELECT Id, ValueDownload, ValueUpload, Time FROM netmetrics WHERE @fromTime <= Time AND Time <= @toTime",
                     new
                     {
                         fromTime,
@@ -82,10 +84,10 @@ namespace MetricsAgent.Models.Repositories
         {
             using var connection = new SQLiteConnection(ConnectionString);
             {
-                return connection.QuerySingle<NetMetric>("SELECT * FROM netmetrics WHERE id=@id",
+                return connection.QuerySingle<NetMetric>("SELECT Id, ValueDownload, ValueUpload, Time FROM netmetrics WHERE Id=@Id",
                     new 
                     {
-                    id
+                    Id = id
                     });
             }
         }

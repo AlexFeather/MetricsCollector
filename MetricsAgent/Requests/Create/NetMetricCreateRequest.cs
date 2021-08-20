@@ -8,6 +8,7 @@ namespace MetricsAgent.Models.Requests
     public class NetMetricCreateRequest
     {
         public TimeSpan Time { get; set; }
-        public int Value { get; set; }
+        public int ValueDownload { get; set; }
+        public int ValueUpload { get; set; }
     }
 }

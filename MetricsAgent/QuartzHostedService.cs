@@ -1,6 +1,12 @@
-﻿using System;
+﻿using MetricsAgent.DAL.Dto;
+using MetricsAgent.Models.Repositories;
+using Microsoft.Extensions.Hosting;
+using Quartz;
+using Quartz.Spi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MetricsAgent
@@ -12,7 +18,7 @@ namespace MetricsAgent
         private readonly IEnumerable<JobSchedule> _jobSchedules;
 
         public QuartzHostedService(
-            ICpuMetricRepository repository,
+            ICpuMetricsRepository repository,
             ISchedulerFactory schedulerFactory,
             IJobFactory jobFactory,
             IEnumerable<JobSchedule> jobSchedules)

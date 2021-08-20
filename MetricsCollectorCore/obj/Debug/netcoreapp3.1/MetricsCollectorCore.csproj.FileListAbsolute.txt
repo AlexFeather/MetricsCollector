@@ -61,3 +61,5 @@ A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\runt
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 A:\gb lessons\MetricsCollector\MetricsCollectorCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.csproj.CoreCompileInputs.cache
+A:\gb lessons\MetricsCollector\MetricsCollectorCore\obj\Debug\netcoreapp3.1\MetricsCollectorCore.MvcApplicationPartsAssemblyInfo.cache
