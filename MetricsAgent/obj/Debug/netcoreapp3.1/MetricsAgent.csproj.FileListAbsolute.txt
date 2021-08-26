@@ -159,3 +159,10 @@ A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\runtimes\win
 A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.csproj.CoreCompileInputs.cache
 A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.MvcApplicationPartsAssemblyInfo.cache
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\MetricsManager.exe
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\MetricsManager.dll
+A:\gb lessons\MetricsCollector\MetricsAgent\bin\Debug\netcoreapp3.1\MetricsManager.pdb
+A:\gb lessons\MetricsCollector\MetricsAgent\obj\Debug\netcoreapp3.1\MetricsAgent.MvcApplicationPartsAssemblyInfo.cs

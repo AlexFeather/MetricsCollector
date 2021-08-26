@@ -17,5 +17,9 @@
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MetricsManager\MetricsManager.csproj" />
+  </ItemGroup>
+
 
 </Project>

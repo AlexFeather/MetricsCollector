@@ -43,7 +43,7 @@ namespace MetricsAgent.Models.Repositories
         public void Update(CpuMetric item)
         {
             using var connection = new SQLiteConnection(ConnectionString);
-            connection.Execute("UPDATE cpumetrics SET value = @value, time = @time WHERE id=@id;",
+            connection.Execute("UPDATE cpumetrics SET value = @value, time = @time WHERE id=@id",
                 new
                 {
                     value = item.Value,

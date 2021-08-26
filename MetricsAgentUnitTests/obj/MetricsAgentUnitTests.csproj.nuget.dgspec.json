@@ -103,7 +103,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "A:\\gb lessons\\MetricsCollector\\MetricsManager\\MetricsManager.csproj": {
+                "projectPath": "A:\\gb lessons\\MetricsCollector\\MetricsManager\\MetricsManager.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -154,6 +158,101 @@
             "System.Diagnostics.PerformanceCounter": {
               "target": "Package",
               "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\gb lessons\\MetricsCollector\\MetricsManager\\MetricsManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\gb lessons\\MetricsCollector\\MetricsManager\\MetricsManager.csproj",
+        "projectName": "MetricsManager",
+        "projectPath": "A:\\gb lessons\\MetricsCollector\\MetricsManager\\MetricsManager.csproj",
+        "packagesPath": "C:\\Users\\MAINCOMP\\.nuget\\packages\\",
+        "outputPath": "A:\\gb lessons\\MetricsCollector\\MetricsManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MAINCOMP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.2.17, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[3.2.17, )"
+            },
+            "FluentMigrator.Runner.SQLite": {
+              "target": "Package",
+              "version": "[3.2.17, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.114.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
