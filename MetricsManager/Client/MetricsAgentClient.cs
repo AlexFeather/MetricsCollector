@@ -37,12 +37,40 @@ namespace MetricsManager.Client.Responses
 
         public AllNetMetricsResponse GetAllNetMetrics(GetAllNetMetricsApiRequest request)
         {
-            throw new NotImplementedException();
+            var fromParameter = request.FromTime.TotalSeconds;
+            var toParameter = request.ToTime.TotalSeconds;
+            var httpRequest = new HttpRequestMessage(HttpMethod.Get, $"{request.AgentAdress}/api/metrics/cpu/from/{fromParameter}/to/{toParameter}");
+
+            try
+            {
+                HttpResponseMessage response = _httpClient.SendAsync(httpRequest).Result;
+                using var responseStream = response.Content.ReadAsStreamAsync().Result;
+                return JsonSerializer.DeserializeAsync<AllNetMetricsResponse>(responseStream).Result;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+            }
+            return null;
         }
 
         public AllRamMetricsResponse GetAllRamMetrics(GetAllRamMetricsApiRequest request)
         {
-            throw new NotImplementedException();
+            var fromParameter = request.FromTime.TotalSeconds;
+            var toParameter = request.ToTime.TotalSeconds;
+            var httpRequest = new HttpRequestMessage(HttpMethod.Get, $"{request.AgentAdress}/api/metrics/cpu/from/{fromParameter}/to/{toParameter}");
+
+            try
+            {
+                HttpResponseMessage response = _httpClient.SendAsync(httpRequest).Result;
+                using var responseStream = response.Content.ReadAsStreamAsync().Result;
+                return JsonSerializer.DeserializeAsync<AllRamMetricsResponse>(responseStream).Result;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+            }
+            return null;
         }
     }
 }

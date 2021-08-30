@@ -7,7 +7,7 @@ namespace MetricsManager.Models
 {
     public class NetMetric
     {
-        public public int Id { get; set; }
+        public int Id { get; set; }
         public int AgentId { get; set; }
         public TimeSpan Time { get; set; }
         public int ValueDownload { get; set; }

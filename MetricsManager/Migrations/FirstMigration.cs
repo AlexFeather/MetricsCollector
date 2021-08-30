@@ -14,7 +14,7 @@ namespace MetricsManager.Migrations
             Delete.Table("agents");
             Delete.Table("cpumetrics");
             Delete.Table("netmetrics");
-            Delete.Table("rammerics")l
+            Delete.Table("rammerics");
         }
 
         public override void Up()

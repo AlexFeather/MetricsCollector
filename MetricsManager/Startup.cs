@@ -10,7 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Polly;
 using System;
-
+using Quartz;
+using Quartz.Impl;
+using Quartz.Spi;
+using MetricsManager.Jobs;
+using MetricsManager.Client.DAL.Dto;
 
 namespace MetricsManager
 {
@@ -47,6 +51,16 @@ namespace MetricsManager
             services.AddHttpClient<IMetricsAgentClient, MetricsAgentClient>()
                 .AddTransientHttpErrorPolicy(p =>
                 p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(1000)));
+
+            services.AddSingleton<IJobFactory, SingletonJobFactory>();
+            services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
+
+            services.AddSingleton<CpuMetricsJob>();
+            services.AddSingleton(new JobSchedule(
+                jobType: typeof(CpuMetricsJob),
+                cronExpression: "0/5 * * * * ?"));
+
+            services.AddHostedService<QuartzHostedService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

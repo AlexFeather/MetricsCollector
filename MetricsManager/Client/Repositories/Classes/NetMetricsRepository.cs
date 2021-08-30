@@ -98,7 +98,17 @@ namespace MetricsManager.Client.Repositories
 
         public void Update(NetMetric item)
         {
-            throw new NotImplementedException();
+            using var connection = new SQLiteConnection(ConnectionString);
+            {
+                connection.Execute("UPDATE netmetrics SET ValueUpload = @ValueUpload, ValueDownload = @ValueDownload, Time = @Time WHERE Id = @Id",
+                    new
+                    {
+                        ValueUpload = item.ValueUpload,
+                        ValueDownload = item.ValueDownload,
+                        Time = item.Time,
+                        Id = item.Id
+                    });
+            }
         }
     }
 }

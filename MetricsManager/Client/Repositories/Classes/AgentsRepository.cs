@@ -22,9 +22,13 @@ namespace MetricsManager.Client.Repositories
             }
         }
 
-        public void Delete()
+        public void Delete(int AgentId)
         {
-            throw new NotImplementedException();
+            using var connection = new SQLiteConnection(ConnectionString);
+            {
+                connection.Execute("DELETE FROM agents WHERE AgentId=@AgentId",
+                    new { AgentId });
+            }
         }
 
         public IList<AgentInfo> GetList()
@@ -33,9 +37,17 @@ namespace MetricsManager.Client.Repositories
             return connection.Query<AgentInfo>("SELECT * FROM agents").ToList();
         }
 
-        public void Update()
+        public void Update(AgentInfo agentInfo)
         {
-            throw new NotImplementedException();
+            using var connection = new SQLiteConnection(ConnectionString);
+            {
+                connection.Execute("UPDATE agents SET AgentAdress=@AgentAdress WHERE AgetnId=@AgentId",
+                    new 
+                    {
+                    AgentAdress = agentInfo.AgentAddress,
+                    AgentId = agentInfo.AgentId
+                    });
+            }
         }
     }
 }
