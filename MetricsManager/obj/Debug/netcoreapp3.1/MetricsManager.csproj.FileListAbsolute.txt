@@ -152,3 +152,6 @@ A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\runtimes\l
 A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
 A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
 A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+A:\gb lessons\MetricsCollector\MetricsManager\bin\Debug\netcoreapp3.1\Quartz.dll
+A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.csproj.CoreCompileInputs.cache
+A:\gb lessons\MetricsCollector\MetricsManager\obj\Debug\netcoreapp3.1\MetricsManager.MvcApplicationPartsAssemblyInfo.cache

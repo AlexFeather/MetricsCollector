@@ -13,6 +13,8 @@ using Quartz.Spi;
 using Quartz;
 using Quartz.Impl;
 using MetricsAgent.DAL.Dto;
+using Microsoft.OpenApi.Models;
+using System;
 
 namespace MetricsAgent
 {
@@ -67,7 +69,28 @@ namespace MetricsAgent
                 jobType: typeof(NetMetricJob),
                 cronExpression: "0/5 * * * * ?"));
 
-
+            services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "API сервиса агента сбора метрик",
+                    Description = "Тут можно поиграть с api нашего сервиса",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Kadyrov",
+                        Email = string.Empty,
+                        Url = new Uri("https://kremlin.ru"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "можно указать под какой лицензией все опубликовано",
+                        Url = new Uri("https://example.com/license"),
+                    }
+                });
+            });
         }
 
         private void ConfigureSqlLiteConnection(IServiceCollection services)
@@ -99,6 +122,12 @@ namespace MetricsAgent
             });
 
             migrationRunner.MigrateUp();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API сервиса агента сбора метрик");
+            });
         }
     }
 }

@@ -16,6 +16,7 @@ using Quartz.Spi;
 using MetricsManager.Jobs;
 using MetricsManager.Client.DAL.Dto;
 
+
 namespace MetricsManager
 {
     public class Startup
@@ -61,6 +62,7 @@ namespace MetricsManager
                 cronExpression: "0/5 * * * * ?"));
 
             services.AddHostedService<QuartzHostedService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

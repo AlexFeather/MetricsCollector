@@ -10,9 +10,9 @@ namespace MetricsManager.Client.Repositories
     {
         public void Create(Uri agentAdress);
 
-        public void Update();
+        public void Update(AgentInfo agentInfo);
 
-        public void Delete();
+        public void Delete(int id);
 
         public IList<AgentInfo> GetList();
     }
